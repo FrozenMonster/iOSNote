@@ -13,10 +13,12 @@ eg : VC1 present VC2, VC2 present VC3, VC3 present VC4, 在调用VC2的dismiss�
 
 -
 
-####VC1的presentingViewController值有两种情况:
+VC1的presentingViewController值有两种情况:
+======
 * VC2 直接 present VC1, VC1.presentingViewController = VC2
 * VC3 是 VC1的最远的一个被present出来的祖先, VC2 present VC3,VC1.presentingViewController = VC2
 
-####VC1的presentedViewController值有两种情况:
+VC1的presentedViewController值有两种情况:
+======
 * VC1 直接 present VC2, VC1. presentedViewController = VC2
 * VC3 是 VC1的最近一个present过VC的祖先, VC3 prsent VC2, VC1.presentedViewController = VC2
